@@ -1,0 +1,56 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business, Karatina, Kenya
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+greetings: "Dear Sir or Madam:"
+---
+
+```{r setup, include=F}
+
+
+place <- "the Standard Chartered Bank"
+jobtitle <- "Data Scientist"
+
+
+```
+
+**RE: APPLICATION FOR THE POSITION OF DATA SCIENTIST**
+
+I write to apply for the advertised opening of `r jobtitle` at `r place`.
+
+My journey into data analysis was born of necessity while pursuing post-graduate research in Financial Economics at the `University of the Witwatersrand, Johanneburg` South Africa, from 2017. The commercial data analysis software I was running could not handle my tasks unless I upgraded to a more capable and costlier version. 
+
+At this point, my attention turned to open source software, with R an appealing choice given its prominence in research and statistics. I enrolled for the `Professional Certificate in Data Science`, a course offered by Harvard University through EDx. 
+
+I cleared the course, allowing me to complete my research (I am awaiting the thesis examiners' reports). The course also sparked my interest in data science. Hence, I took additional data analysis and machine learning training as detailed in the attached CV and my `Linkedin` profile page (see <https://www.linkedin.com/in/karuitha/>). In the process, I have become familiar with Big Data analytics ecosystems like Hadoop and Spark. 
+
+Importantly, I embrace continuous learning, a critical personal quality in the era of rapid technological changes that also affect the evolving data science field. Currently, I am undertaking further data science courses to further my knowledge and independent data science projects in my `GitHub` account (see github.com/Karuitha). 
+
+Although I am currently in academia, I have previously held professional positions. At Twana Twitu Cares, an NGO, I was in charge of finance, where I did financial reports for the management and donors (USAID and AMREF). I was the project manager at NECLI, a livelihoods improvement and environmental conservation community-based organisation, at the time, funded by the EU and DANIDA. 
+
+Given my background, I believe I can handle the tasks of a data scientist. Please feel free to contact me for further information or clarification.
+
+
+Best regards,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+John Karuitha
