@@ -1,0 +1,247 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+  \setmainfont[]{cochineal}
+  \setmonofont[]{Fira Code}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}
+    }
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{John Karuitha}
+\date{14 March 2023}
+
+% Jesus, okay, everything above this comment is default Pandoc LaTeX template. -----
+% ----------------------------------------------------------------------------------
+% I think I had assumed beamer and LaTex were somehow different templates.
+
+
+\usepackage{kantlipsum}
+
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+
+\renewenvironment{abstract}
+ {{%
+    \setlength{\leftmargin}{0mm}
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \relax}
+ {\endlist}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+      {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}
+    }
+%\fi
+\makeatother
+
+
+ 
+
+
+
+%\author{\Large \vspace{0.05in} \newline\normalsize\emph{}  }
+
+
+\date{}
+
+\usepackage{titlesec}
+
+% 
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\itshape} % \small\uppercase
+\titleformat*{\subsubsection}{\normalsize\itshape}
+\titleformat*{\paragraph}{\normalsize\itshape}
+\titleformat*{\subparagraph}{\normalsize\itshape}
+
+% add some other packages ----------
+
+% \usepackage{multicol}
+% This should regulate where figures float
+% See: https://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned
+\usepackage[section]{placeins}
+
+
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \PassOptionsToPackage{hyphens}{url}\usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \PassOptionsToPackage{hyphens}{url}\usepackage[draft,unicode=true]{hyperref}
+\fi
+}
+
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={ ()},
+             pdfkeywords = {},  
+            pdftitle={},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+% Add an option for endnotes. -----
+
+
+
+% This will better treat References as a section when using natbib
+% https://tex.stackexchange.com/questions/49962/bibliography-title-fontsize-problem-with-bibtex-and-the-natbib-package
+
+
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+\linespread{1.05}
+
+\newtheorem{hypothesis}{Hypothesis}
+
+\usepackage{fontawesome}
+
+\newcommand{\blankline}{\quad\pagebreak[2]}
+\usepackage{graphicx}
+
+\begin{document}
+
+
+
+\hfill
+\begin{minipage}[t]{1\textwidth}
+\raggedleft%
+{\bfseries John Karuitha }\\[.35ex]
+\emph{\small Karatina University,\\
+School of Business, Karatina, Kenya} \\[.35ex]
+\faPhone \hspace{1 mm} \small{+254 736 917 717} \\ 
+\faEnvelopeO \hspace{1 mm} \small{\tt \href{mailto:diakingathia2005@gmail.com}{\nolinkurl{diakingathia2005@gmail.com}}} \\ 
+\faGlobe \hspace{1 mm} \small{\href{http://\(www.linkedin.com/in/Karuitha/\)}{\tt \(www.linkedin.com/in/Karuitha/\)}}\\ 
+\hspace{1cm} \\
+ 14 March 2023 \\ 
+\end{minipage}
+
+% \vspace*{1em} 
+
+ 
+
+% 14 March 2023
+% 
+% \vspace*{1em} 
+% 
+
+% % \setlength{\parindent}{16pt}
+% \setlength{\parskip}{0pt}
+% 
+\textbf{The Human Resources Officer},
+
+\emph{African Population and Health Research Center, Inc (APHRC),}
+
+\emph{P.O. Box 10787-GPO, Nairobi.}
+
+Dear Hiring Manager,
+
+\textbf{APPLICATION: DATA CONSULTANT}
+
+I write to apply for the position of Data Consultant at African
+Population and Health Research Center, Inc.
+
+I have submitted my PhD thesis in Finance and will graduate in June 2023
+from University of the Witwatersrand. I am a research fellow at the
+African Centre for the Study of the USA focusing on Africa-USA economics
+and trade. Related articles are in my linkedin site.
+
+My experience in research, data analysis, education, finance, and
+related roles spans over a decade. During this period, I have gained
+skills in data analysis using R, Python, SQL, Stata, and E-Views. I am
+also familiar with Big Data analytics ecosystems like Hadoop and Spark.
+
+As a research assistant at the \texttt{Wits\ Business\ School} in South
+Africa, I have worked with the World Bank, IMF, MIX, and FRED data for
+five years. As a macroeconomic statistician specializing in sovereign
+debt with \texttt{Trounceflow} (UK, Remote), I collected and analysed
+global data on sovereign debt. I have also participated in field data
+collection and analysis with the
+\texttt{Kenya\ Institute\ of\ Public\ Policy\ Research\ and\ Analysis\ (KIPPRA)}.
+
+Although currently in academia, I have previously held professional
+positions. At \texttt{Twana\ Twitu\ Cares}, an NGO in Kenya, I was in
+charge of finance, where I did financial reports for the management and
+donors (USAID and AMREF). I was the project manager at \texttt{NECLI}, a
+livelihoods and environmental conservation CBO in Kenya funded by the EU
+and DANIDA.
+
+My central philosophy is continuous learning. I am undertaking data
+science courses and projects available in my \texttt{rpubs} site
+(\(https://www.rpubs.com/karuitha/\)).
+
+Given my background, I believe I can handle the tasks of Data
+Consultant. Please feel free to contact me for further information or
+clarification.
+
+Best regards,
+
+John Karuitha.
+
+\end{document}

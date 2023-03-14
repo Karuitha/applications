@@ -1,0 +1,56 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business, Karatina, Kenya
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/Karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+greetings: "Dear Hiring Manager:"
+---
+
+```{r setup, include=F}
+
+
+place <- "International Rescue Committee"
+jobtitle <- "Data Analyst- People Survey"
+
+
+```
+
+**APPLICATION: `r toupper(jobtitle)`**
+
+I write to apply for the position of `r jobtitle` at `r place`.
+
+I have submitted my PhD thesis in Finance and will graduate in June 2023 from Wits. I am a research fellow at the African Centre for the Study of the United States of America where I research Africa-US economics and trade relations. Related articles are in my linkedin site. 
+
+My experience in data analysis spans over 10 years. During this period, I have gained skills in data analysis using R, Python, SQL, Stata, and E-Views. I am also familiar with Big Data analytics ecosystems like Hadoop and Spark. 
+
+Importantly, I embrace continuous learning. I am undertaking data science courses and independent data analysis projects. Additional information is available on my `GitHub` account (<https://www.github.com/Karuitha>) and `rpubs` site (<https://www.rpubs.com/karuitha/>). 
+
+As a research assistant at the `Wits Business School` in South Africa, I have worked with the World Bank, IMF, MIX, and FRED data for five years. As a macroeconomic statistician specialising in sovereign debt with `Trounceflow` (UK, Remote), I collected and analysed global data on sovereign debt. I have also participated in field data collection and analysis with the `Kenya Institute of Public Policy Research and Analysis (KIPPRA)`. 
+
+Although currently in academia, I have previously held professional positions. At `Twana Twitu Cares`, an NGO in Kenya, I was in charge of finance, where I did financial reports for the management and donors (USAID and AMREF). I was the project manager at `NECLI`, a livelihoods improvement and environmental conservation community-based organisation in Kenya funded by the EU and DANIDA. I have over 10 years of experience in education, research, finance, and related roles.
+
+Given my background, I believe I can handle the tasks of `r jobtitle`. Please feel free to contact me for further information or clarification. 
+
+
+Best regards,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+John Karuitha.

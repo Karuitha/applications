@@ -1,0 +1,49 @@
+---
+fromname: John Karuitha
+fromqualifications: PhD
+#fromtitle: ""
+fromWWW: linkedin.com/in/Karuitha
+fromemail: diakingathia2005@gmail.com
+fromphone: (+254) 736 917 717
+#fromdepartment: Department of Business and Economics 
+#frominstitute: Karatina University
+#fromaddress: P.O. Box 1957-10101, Karatina, Kenya
+fromsignature: mysign
+fromlogo: mylogo
+toname: The Hiring Manager
+toaddress: |
+  | Africa Population and Health Research Center (APHRC) 
+  | P.O. Box 10787-GPO, Nairobi.
+subject: Application for the Position of Data Consultant
+opening: Dear Hiring Manager, 
+closing: Best regards,
+spacing: 1.2
+format: qletter-pdf
+---
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+place <- "APHRC, Inc"
+
+jobtitle <- "Data Consultant"
+
+```
+
+
+I write to apply for the position of `r jobtitle` at the `r place`.
+
+I have submitted my PhD thesis in Finance and will graduate in June 2023 from Wits University, South Africa. I am a research fellow at the African Centre for the Study of the USA focusing on Africa-USA relations. Related articles are in my linkedin and `rpubs` site (https://www.rpubs.com/karuitha/).
+
+My experience in research, data analysis, education, and finance spans over a decade. I am skilled in R, Python, SQL, Stata, and E-Views. 
+
+As a research assistant at the `Wits Business School`, I have worked with the World Bank, IMF, MIX, and FRED data for five years. I collected and analysed global data on sovereign debt for Trounceflow (UK, remote). I have also participated in field data collection and analysis with the `Kenya Institute of Public Policy Research and Analysis (KIPPRA)`. 
+
+I have previously held professional positions. At `Twana Twitu`, an NGO in Kenya, I was the finance officer, where I did financial reports for the management and donors. I was the project manager at `NECLI`, a livelihoods and environmental conservation CBO in Kenya.
+
+Please feel free to contact me for further information or clarification. 
+
+

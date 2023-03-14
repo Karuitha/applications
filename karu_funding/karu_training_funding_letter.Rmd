@@ -1,0 +1,71 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business, Karatina, Kenya
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+# greetings: "Dear Sir:"
+---
+
+```{r setup, include=F}
+
+
+place <- 'ISACA  Kenya Chapter'
+training <- '***Data Analytics: Analyzing and Visualizing Data with Excel***'
+```
+
+The Deputy Vice-Chancellor,
+
+Planning, Finance and Administration,
+
+Karatina University, Karatina, Kenya.
+
+\vspace{12pt}
+
+Through: The Dean, School of Business.
+
+\vspace{12pt}
+
+Through: The Head of department, Business \& Economics.
+
+\vspace{12pt}
+
+Dear Sir,
+
+**RE: REQUEST FOR FINANCING - DATA ANALYTICS TRAINING**
+
+I am writing to request funding to support my attendance of `r place` `r training` training from 12-16th September 2022 in Mombasa, Kenya.
+
+I am a member of ISACA (Kenya Chapter), which requires participation in continuous professional education to retain membership. ISACA is a global Information technology body with  a mission to:
+
+> * help business technology professionals and their enterprises around the world realize the positive potential of technology... (by) inspiring confidence that enables innovation through technology.* <https://www.isaca.org/why-isaca/about-us> 
+
+I also teach two finance and accounting courses that have substantial Ms Excel content; *BBM 419: Financial Statements Analysis* and *BBM 450: Practical Accounting Data Processing*. Hence, this training will contribute directly to my teaching.
+
+
+Yours Sincerely,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+John Karuitha
+
+Enclosures: 
+
+- Training Program \& Budget.
+

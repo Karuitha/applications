@@ -1,0 +1,57 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business, Karatina, Kenya
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/Karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+greetings: "Dear Hiring Manager:"
+---
+
+```{r setup, include=F}
+
+
+place <- "Pay.UK"
+jobtitle <- "Researcher/ Data Modeller"
+
+library(tidyverse)
+```
+
+**RE: APPLICATION - `r str_to_upper(jobtitle)`**
+
+I write to apply for the position of `r jobtitle` at `r place`.
+
+I have over 15 years of experience in education, research, data analysis, finance, and related roles. I have advanced skills in R, Ms Excel, and Machine Learning. I have intermediate (and growing) SQL, Python, Anaconda, and Visual Studio Code and a working knowledge of Stata, Eviews, and Big Data analytics ecosystems like Hadoop and Spark. 
+
+As a research assistant at the Wits Business School in South Africa, I worked with the World Bank, IMF, MIX, and FRED data for five years. As a macroeconomic statistician specialising in sovereign debt with `Trounceflow`, I collected and analysed global data on sovereign debt, deficits, and surpluses. I have severally participated in the collection and analysis of survey data. 
+
+I submitted my PhD thesis in Financial Economics at the `University of the Witwatersrand, Johannesburg` in South Africa, expecting to graduate in December 2022. My research examined the transformation of micro-finance institutions in Africa. Hence, I have well-developed knowledge in research methodology, financial economics, SDGs, sovereign debt and statistical (econometrics) analysis. 
+
+Although currently in academia, I have previously held professional positions. At Twana Twitu Cares, an NGO in Kenya, I was in charge of finance, where I did financial reports for the management and donors (USAID and AMREF). I managed a livelihoods improvement and environmental conservation project in Kenya funded by the EU and DANIDA. 
+
+Importantly, I embrace continuous learning. I am undertaking data science courses and independent data analysis projects. Additional information is available on `Rpubs` (<https://www.rpubs.com/Karuitha>) and `Linkedin`  (<https://www.linkedin.com/in/karuitha/>). 
+
+Given my background, I believe I can handle the tasks of `r jobtitle`. Please feel free to contact me for further information or clarification.
+
+
+Best regards,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+John Karuitha.
+
+Enclosures: Resume

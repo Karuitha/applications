@@ -1,0 +1,61 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business, Karatina, Kenya
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/Karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+greetings: "Dear Hiring Manager:"
+---
+
+```{r setup, include=F}
+library(tidyverse)
+library(kableExtra)
+
+place <- "Institute of Security Studies (ISS)"
+jobtitle <- "Researcher, African Futures and Innovation "
+
+
+```
+
+**Follow-up Queries for `r jobtitle`**
+
+I have received your follow-up queries for my `r jobtitle` application.
+
+My responses are as follows;
+
+1. **The position requires the candidate to be based in Pretoria. Are you willing to relocate?**
+
+- Yes, I am willing to relocate. I have the advantage that I lived in Johannesburg between 2017-2021 and hence familiar with the culture and environment in South Africa.
+
+2. **If willing to relocate, will you be relocating alone?**
+
+- Yes, I will relocate alone.
+
+3. **What is your gross salary expectation in ZAR per month.**
+
+- My expected salary is negotiable around **ZAR 50,000** per month.
+
+
+You may contact me in case of further information or clarification.
+
+Best regards,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+John Karuitha.

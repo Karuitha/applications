@@ -1,0 +1,57 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business, Karatina, Kenya
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+greetings: "Dear Sir or Madam:"
+---
+
+```{r setup, include=F}
+
+
+place <- "RTI"
+jobtitle <- "Senior Monitoring & Evaluation Specialist"
+
+
+```
+
+**RE: APPLICATION - `r toupper(jobtitle)`**
+
+I write to apply for `r jobtitle` at `r place`. 
+
+I have over 15 years of experience in education, finance, research, data analysis and related roles. I have worked extensively with data in my research work in all these roles. For instance, as a Graduate Research Assistant (GRA) at University of the Witwatersrand for five years, I worked extensively with data from the World Bank, IMF, and other UN bodies. I also analysed data from the Microfinance Information Exchange (MIX), Bloomberg and BankScope. 
+
+I have advanced skills in R programming and Ms Excel, with sound working knowledge of SQL, Stata and Eviews. I am also well versed in R Markdown and version control using Git and GitHub and familiar with Big Data analytics ecosystems like Hadoop, MapReduce, and Spark. Further, I have skills in Financial Statements Analysis, Valuation, Budgeting, Capital Budgeting, and Economic Analysis. I also embrace continuous learning.
+
+What is more, I can explain the results of data analysis to a non-technical audience, given my background in education as a teacher and tutorial fellow. My articles in several newspapers, websites and journals attest to this capability, as do data projects on Rpubs (www.rpubs.com/Karuitha), my GitHub profile (github.com/Karuitha) and LinkedIn (linkedin.com/in/Karuitha). 
+
+Although I am currently in academia, I have previously held professional positions. At Twana Twitu Cares, an NGO, I was in charge of finance, where I did financial reports for the management and donors (USAID and AMREF). I was the project manager at NECLI, a livelihoods improvement and environmental conservation community-based organisation, at the time, funded by the EU and DANIDA. 
+
+Given my background, I can handle the tasks of an `r jobtitle`. Please feel free to contact me for further information or clarification. 
+
+
+Best regards,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+John Karuitha.
+
+
+

@@ -1,0 +1,54 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business, Karatina, Kenya
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+greetings: "Dear Sir or Madam:"
+---
+
+```{r setup, include=F}
+
+
+place <- "University of Cape Town"
+jobtitle <- "Postdoctoral Research Fellowship in Quantitative Methods in the Center for Social Science Research"
+
+
+```
+
+**RE: APPLICATION - `r toupper(jobtitle)`**
+
+I write to apply for the position of `r jobtitle` at the `r place`.
+
+In October 2021, I submitted my PhD thesis in Financial Economics at the `University of the Witwatersrand, Johannesburg` in South Africa, expecting to graduate in June 2022. My PhD research examined the transformation of Microfinance Institutions in Africa. I have over 15 years of experience in education (including working with teenagers in High Schools and university undergraduate students), research, finance, and related roles. 
+
+The PhD research journey saw me gain expert level skills in R programming and Ms Excel, with sound working knowledge of SQL, Stata and Eviews. I have also become familiar with Big Data analytics ecosystems like SQL, Hadoop, and Spark. Moreover, as a research assistant at the Wits Business School, I have had five years of practical experience working with Bloomberg, IMF, the World Bank data, the mainstream UN system and other data sets.  
+
+Importantly, I embrace continuous learning, a critical personal quality in the era of rapid technological changes that also affect the evolving data science field. Currently, I am undertaking further data science courses to further my knowledge and independent data science projects. Further information is available in my `GitHub` account (see github.com/Karuitha) and `Linkedin` profile page (see <https://www.linkedin.com/in/karuitha/>). 
+
+Although I am currently in academia, I have previously held professional positions. At Twana Twitu Cares, an NGO, I was in charge of finance, where I did financial reports for the management and donors (USAID and AMREF). I was the project manager at NECLI, a livelihoods improvement and environmental conservation community-based organisation, at the time, funded by the EU and DANIDA. 
+
+Given my background, I believe I can perform well in the role. Please feel free to contact me for further information or clarification. 
+
+
+Best regards,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+John Karuitha.

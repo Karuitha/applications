@@ -1,0 +1,56 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business, Karatina, Kenya
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+greetings: "Dear Sir or Madam:"
+---
+
+```{r setup, include=F}
+
+
+place <- "Equity Bank LTD"
+jobtitle <- "Research Analyst/ Data Scientist"
+
+
+```
+
+**RE: APPLICATION FOR THE POSITION OF RESEARCH ANALYST/ DATA SCIENTIST**
+
+I write to apply for the position of `r jobtitle` at `r place`.
+
+My journey into data analysis was born of necessity while pursuing post-graduate research in Financial Economics at the `University of the Witwatersrand, Johannesburg` in South Africa, from 2017. My PhD research examined the transformation of Microfinance Institutions in Africa. I am to graduate later in 2021 or early 2022. The research journey saw me learn R programming by taking the `Professional Certificate in Data Science` course offered by Harvard University through EDx. 
+
+I have become familiar with Big Data analytics ecosystems like SQL, Hadoop, and Spark through these courses. Moreover, as a research assistant at the Wits Business School, I have had five years of practical experience working with Bloomberg and the World Bank data.  
+
+Importantly, I embrace continuous learning, a critical personal quality in the era of rapid technological changes that also affect the evolving data science field. Currently, I am undertaking further data science courses to further my knowledge and independent data science projects. Further information is available in my `GitHub` account (see github.com/Karuitha) and `Linkedin` profile page (see <https://www.linkedin.com/in/karuitha/>). 
+
+Although I am currently in academia, I have previously held professional positions. At Twana Twitu Cares, an NGO, I was in charge of finance, where I did financial reports for the management and donors (USAID and AMREF). I was the project manager at NECLI, a livelihoods improvement and environmental conservation community-based organisation, at the time, funded by the EU and DANIDA. 
+
+Given my background, I believe I can handle the tasks of a research analyst/ data scientist should a vacancy exist. Please feel free to contact me for further information or clarification. 
+
+
+Best regards,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+John Karuitha.
+
+Enclosures: Resume. 

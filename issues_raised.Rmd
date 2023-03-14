@@ -1,0 +1,73 @@
+---
+title: "Answers to Pertinent Questions"
+author: "John Karuitha; diakingathia005@gmail.com"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+header-includes:
+- \usepackage{pdflscape}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(kableExtra)
+```
+
+
+Please see the responses to the following questions in the **next page**.
+
+- What are your hours of availability?
+- What is your LinkedIn Profile URL?
+- What is your earliest start date?
+- Are you willing to work evenings (3pm-12am)?
+- Do you have any professional qualifications?
+- Do you have Medical Coding experience (DRG, CPT, ICD-10 coding)?
+- Do you have experience writing Medical Summaries?
+- What is your current country of residence?
+- What university degree do you have?
+- Is your degree attested by the UAE Ministry of Foreign Affairs?
+- Expected minimum salary.
+
+\newpage
+
+\blandscape
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE}
+tribble(~Issue, ~ Response, 
+        
+        "What are your hours of availability?", "I am available in the evenings from 1600 hours to midnight.", 
+        
+        "What is your LinkedIn Profile URL?", "My linkedin profile is  www.linkedin.com/in/Karuitha.", 
+        
+        "What is your earliest start date?", "My earliest start date would be December 1, 2022.",
+        
+        "Are you willing to work evenings (3pm-12am)?", "Yes.",
+        
+        "Do you have any professional qualifications?", "Yes, I am a Certified Accountant and Certified Information Systems Auditor.", 
+        
+        "Do you have Medical Coding experience (DRG, CPT, ICD-10 coding)?", "No I have no coding experience in the medical field. But I do have extensive coding experience in R, Python and SQL with advanced Ms Office and Google Suite skills.", 
+        
+        "Do you have experience writing Medical Summaries?", "I have not written medical summaries. However, I have experience writing research summaries in business and economics.",
+        
+        "What is your current country of residence?", "I reside in Kenya.", 
+        
+        "What university degree do you have?", "I expect to graduate with PhD in Finance in December, 2022 from the University of the Witwatersrand, Johannesburg, South Africa. I also have an MBA and a degree in Education.",
+        
+        "Is your degree attested by the UAE Ministry of Foreign Affairs?", "No, but the university is accreditted as a top 200 university in the world.",
+        
+        "Expected minimum salary.", "My salary expectation is USD 6000 per month subject to negotiations.") %>% 
+        
+        kbl(booktabs = TRUE, caption = "Response to Pertinent Issues") %>% 
+        
+        kable_classic(full_width = FALSE, 
+                      latex_options = "striped") %>% 
+        
+        column_spec(1, width = "30em", bold = TRUE, italic = TRUE) %>% column_spec(2, width = "30em", bold = FALSE, italic = FALSE)
+```
+
+\elandscape
+\newpage

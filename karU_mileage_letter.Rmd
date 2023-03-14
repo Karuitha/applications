@@ -1,0 +1,75 @@
+---
+output: stevetemplates::cover_letter
+geometry: margin=1in
+header-includes:
+  - \linespread{1.05}
+
+author: John Karuitha
+address: |
+    | Karatina University,
+    | School of Business,
+    | Department of Business and Economics, Karatina, Kenya.
+email: "diakingathia2005@gmail.com"
+url: www.linkedin.com/in/Karuitha/
+phone: +254 736 917 717
+fontsize: 12pt
+mainfont: cochineal
+monofont: Fira Code
+
+fontawesome: TRUE
+date: "`r format(Sys.time(), '%d %B %Y')`"
+#greetings: "Dear Sir:"
+---
+
+```{r setup, include=F}
+
+
+place <- "Karatina University"
+jobtitle <- "Request for Adjustment of Commuting Allowance"
+
+
+```
+
+The Deputy Vice-Chancellor,
+
+Planning, Finance and Administration,
+
+Karatina University, Karatina, Kenya.
+
+\vspace{12pt}
+
+Dear Sir,
+
+**RE: `r toupper(jobtitle)`**
+
+I write to apply for the adjustment of my commuting allowance.
+
+While I previously did not have a car, I have since purchased one (registration *KDH 685C*).
+
+I am attached to the School of Business, Department of Business and Economics. My PF number is 0266.
+
+I am sharing with you the relevant documents.
+
+
+
+\vspace{18pt}
+
+Yours Sincerely,
+
+```{r eval=F, echo=FALSE, out.width='30%'}
+# knitr::include_graphics('john-hancock.png')
+# ^ put your signature here as a PNG or something.
+```
+
+
+John Karuitha.
+
+PF: 0266
+
+Enclosures: 
+
+        Copy of Motor Vehicle Log Book
+
+        Certificate of Insurance
+        
+        Interim driving licence

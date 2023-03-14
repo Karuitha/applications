@@ -1,0 +1,34 @@
+---
+title: "**Statement of Research Interests**"
+subtitle: "*Financial Development, Financial Inclusion, and Microfinance*"
+author: "John Karuitha"
+date: "`r format(Sys.Date(), format = '%B %Y')`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## **Overview**
+My research interests span financial development, financial inclusion, microfinance (MF) and Fintech. Specifically, I examine the place of MF and Fintech in fostering financial development and inclusion in Africa. Noting that Africa is the continent with the highest incidence of financial exclusion, research into financial inclusion in critical in Africa's development, factoring in the SDG's and the Africa Union (AU) agenda 2063. To bring this matter into perspective, SDG
+
+## **Research accomplishments**
+
+
+## **Current work**
+
+## **Future direction**
+
+## **Funding history and potential**
+
+## **How your research contributes to your field**
+
+## **Potential research and industrial collaborations**
+
+## **Requirements for laboratory equipment and space and other resources**
+
+
+The research statement should be technical, but should be intelligible to all members of the department, including those outside your sub-discipline. So keep the “big picture” in mind. The strongest research statements present a readable, compelling, and realistic research agenda that fits well with the needs, facilities, and goals of the department.
